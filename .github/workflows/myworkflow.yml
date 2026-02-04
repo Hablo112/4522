@@ -16,6 +16,9 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          projectKey: Hablo112_4522   
+          organization: hablo112     
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
